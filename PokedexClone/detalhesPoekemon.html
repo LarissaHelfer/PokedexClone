@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <link rel="icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+    <link rel="stylesheet" href="./src/css/estiloDetalhes.css" class="css">
+    <link rel="stylesheet" href="./src/css/reset.css" class="css">
+    <link rel="stylesheet" href="./src/css/responsivo.css" class="css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="itens">
+            <div class="listaPersonagens">
+                <div class="personagens">
+                    <ul lista="pokedex" class="pokedex"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon List</title>
+</head>
+<body>
+  <div id="loading">
+    <img src="loading.gif" alt="Loading..." />
+  </div>
+  <div id="pokemon-list"></div>
+
+  <script>
+    const url = "https://pokeapi.co/api/v2/pokemon/?limit=1010";
+    var limit = 12;
+    var todosDados = [];
+
+    // Show loading image
+    const loadingDiv = document.getElementById("loading");
+    loadingDiv.style.display = "block";
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        const pokemons = data.results;
+
+        // pega as informações de cada pokemon
+        const fetchPokemonDetails = async (pokemon) => {
+          const response = await fetch(pokemon.url);
+          const pokemonDetails = await response.json();
+          return pokemonDetails;
+        };
+
+        // da um fetch nas informações dos pokemon
+        var pokemonDetailsPromises = pokemons.map((pokemon) =>
+          fetchPokemonDetails(pokemon)
+        );
+
+        // aguarda requisição
+        Promise.all(pokemonDetailsPromises).then((pokemonDetails) => {
+          pokemonDetails.forEach((pokemon) => {
+            todosDados.push(pokemon);
+          });
+          // Temos os dados
+
+          // Esconde o loading image
+          loadingDiv.style.display = "none";
+
+          // Só renderizar os 12 primeiros
+          const cargaInicial = todosDados.slice(0, limit);
+          inserePokemon(criaHTML(cargaInicial));
+        });
+      });
+
+    function inserePokemon(html) {
+      document.getElementById("pokemon-list").innerHTML = html;
+    }
+
+    function criaHTML(pokemons) {
+      // Create HTML for the list of pokemons
+      // ...
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+body{
+    background: #424242 url(../images/body_bg.png);
+    font-family: "Fleco-Regular", Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    height: 100%;
+}
+
+.container{
+    background: #fff url(../images/container_bg.png);
+    box-sizing: border-box;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    max-width: 1280px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.itens{
+    margin-left: 190px;
+    margin-right: 190px;
+    background: #fff;
+    color: black;
+    padding: 15px;
+}
+
+.fundo{
+    background: #fff;
+}
+
+.info-topo{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    color: #212121;
+    font-family: "Flexo-Medium", arial, sans-serif;
+    margin-bottom: 50px;
+    font-size: 225%;
+}
+
+.id{
+    margin-left: 10px;
+    color: #616161;
+}
+
+.perfil{
+   position: relative;
+   background-color: #F2F2F2;
+   border-radius: 5px; 
+   float: left;
+   width: 430px;
+   height: 400px;
+   margin-bottom: 150px;
+   margin-right: 10px;
+}
+
+.personagem{
+    display: block;
+    width: 400px;
+   height: 400px;
+}
+
+
+.caracteristicas {
+    background: #30a7d7;
+    color: #fff;
+    border-radius: 10px;
+    height: 260px;
+    margin-left: 440px;
+    width: 425px;
+    padding: 15px;
+    
+}
+
+.caracteristicas span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#infoPokemon{
+    color: #000;
+    font-family: "Flexo-Medium",arial,sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tipo{
+    height: 200px;
+    background-color: #fff;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 350px;
+    margin-top: 0px;
+    display: block;
+}
+
+.botao{
+    background: rgb(238, 107, 47);
+    height: 50px;
+    width: 240px;
+    display: flex;
+    border-radius: 5px;
+    padding: 18px 15px 15px 25px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 70px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.type{
+    margin-top: 30px;
+    margin-left: 450px;
+    font-size: 20px;
+    font-family: "Flexo-Medium",arial,sans-serif;
+    margin-bottom: 10px;
+}
+
+.grass{
+    background: rgb(155, 204, 80);
+    color: rgb(0 0 0);
+    margin: 5px 5px 0 0;
+    border-radius: 3px;
+    display: flex;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    padding-top: 6px;
+    justify-content: center;
+}
+
+.poison{
+    background: rgb(185, 127, 201);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #fff;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.fire{
+    background: rgb(253, 125, 36);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #fff;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.flying{
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #000;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.water{
+    background: rgb(69, 146, 196);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #ffff;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.bug{
+    background: rgb(114, 159, 63);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #ffff;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.normal{
+    background: rgb(164, 172, 175);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #000;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.electric{
+    background: rgb(238, 213, 53);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #000;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.ground{
+    background: linear-gradient(180deg, rgb(238, 213, 53) 50%, rgb(171, 152, 66) 50%);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #000;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.fairy{
+    background: rgb(253, 185, 233);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #000;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.fighting{
+    background: rgb(213, 103, 35);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #ffff;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.psychic{
+    background: rgb(243, 102, 185);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #ffff;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.steel{
+    background: rgb(158, 183, 184);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #000;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.ice{
+    background: rgb(81, 196, 231);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #000;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.ghost{
+    background: rgb(123, 98, 163);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #fff;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.rock{
+    background: rgb(163, 140, 33);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #fff;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+.dragon{
+    background: linear-gradient(180deg, rgb(83, 164, 207) 50%, rgb(241, 110, 87) 50%);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #fff;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.dark{
+    background: rgb(112, 112, 112);
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #fff;
+    border-radius: 3px;
+    margin: 5px 5px 0 0px;
+    display: flex;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    justify-content: center;
+}
